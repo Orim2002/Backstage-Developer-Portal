@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+.yarn/cache
+
+# Build outputs
+packages/backend/dist/
+packages/app/dist/
+dist/
+
+# Environment & secrets
+.env
+.env.*
+*.tfvars
+!*.tfvars.example
+
+# Terraform
+**/.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+terraform.plan
+
+# Docker
+.dockerignore
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+yarn-error.log
