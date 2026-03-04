@@ -148,8 +148,6 @@ auth_github_client_id_arn       = "arn:aws:secretsmanager:..."
 auth_github_client_secret_arn   = "arn:aws:secretsmanager:..."
 ```
 
-> Never commit `terraform.tfvars` to version control.
-
 ### 3. Create secrets in AWS Secrets Manager
 
 ```bash

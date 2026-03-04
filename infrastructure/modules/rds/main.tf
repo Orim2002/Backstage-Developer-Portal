@@ -40,7 +40,7 @@ resource "aws_db_instance" "main" {
   db_subnet_group_name   = aws_db_subnet_group.main.name
   vpc_security_group_ids = [aws_security_group.rds.id]
 
-  skip_final_snapshot = false
+  skip_final_snapshot = true
   multi_az            = var.environment == "prod" ? true : false
 
   tags = {
